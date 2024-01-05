@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game">
+        <div class="choices">
+            <div class="header">
+                <p>Select a Choice</p>
+            </div>
+            <div class="symbols">
+                <div class="symbol">
+                    <img src="image/rock.png" id="rock" onclick="choice_selected(event)" alt="">
+                    <div class="symbol-des">Rock</div>
+                </div>
+                <div class="symbol">
+                    <img src="image/paper.png" id="paper" onclick="choice_selected(event)" alt="">
+                    <div class="symbol-des">Paper</div>
+                </div>
+                <div class="symbol">
+                    <img src="image/scissor.png" id="scissor" onclick="choice_selected(event)" alt="">
+                    <div class="symbol-des">Scissor</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="res">
+            <div class="res-header">
+                Result
+            </div>
+            <div id="res-title"></div>
+            <div class="res-des">
+                <div class="user-des des">
+                    You selected - <div id="user-selected-image"></div>
+                </div>
+                <div class="com-des des">
+                    Computer selected - <div id="com-selected-image"></div>
+                </div>
+                <div id="scores">
+                    <div class="scores-head">Scores<div class="reset"><a href="" onclick="resetScore()">Reset Score</a></div></div>
+                    <div class="score-des">
+                        <div class="score">Computer Score: &nbsp;<div id="com-score"></div></div>
+                        <div class="score">User Score: &nbsp;<div id="user-score"></div></div>
+                        <div class="score">Draw: &nbsp;<div id="draw-score"></div></div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
